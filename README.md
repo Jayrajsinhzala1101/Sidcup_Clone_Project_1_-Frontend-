@@ -13,7 +13,7 @@ This is a frontend clone of the [Sidcup Family Golf](https://sidcupfamilygolf.co
 ## 🛠 Tech Stack
 
 - **HTML5**
-- **CSS3** / **Tailwind CSS** / **SCSS** *(based on your implementation)*
+- **CSS3**
 - **JavaScript**
 - **GSAP / ScrollTrigger** *(if animations are included)*
 - **Locomotive Scroll** *(if used for smooth scrolling)*
