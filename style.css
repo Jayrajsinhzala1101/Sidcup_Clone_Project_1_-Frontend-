@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Montserrat";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    height: 145px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 150px;
+    gap: 50px;
+    position: fixed;
+    z-index: 13;
+}
+
+#nav img {
+    width: 105px;
+    height: 85px;
+    /* cursor: pointer; */
+}
+
+#nav h4:hover {
+    color: #91B508;
+}
+
+#nav h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.text {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.67);
+}
+
+#page1 {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    /* white-space: wrap; */
+}
+
+#page1 h1::before {
+    content: "EAT.DRINK. PLAY.";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    color: black;
+    -webkit-text-stroke: 1px #91B508;
+    z-index: -1;
+    white-space: wrap;
+}
+
+#page1 h1 {
+    white-space: wrap;
+    font-weight: 900;
+    font-size: 150px;
+    position: relative;
+    white-space: wrap;
+}
+
+#page1 h2 {
+    font-weight: 900;
+    font-size: 33px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#page1 h4 {
+    font-weight: 500;
+    font-size: 18px;
+    width: 40%;
+}
+
+#page2 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+#cursor {
+    position: fixed;
+    z-index: 10;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-color: #91B508;
+}
+
+#cursor-blur {
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #92b50847;
+    filter: blur(30px);
+    z-index: 10;
+}
+
+#scroller {
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 11;
+    margin-bottom: 103px;
+}
+
+#scroller::-webkit-scrollbar {
+    display: none;
+}
+
+#scroller h4:hover {
+    color: #91B508;
+    cursor: pointer;
+}
+
+#scroller h4 {
+    /* color: #000;  */
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 140px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+#scroller-in {
+    animation: scroll 20s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#about-us {
+    position: relative;
+    z-index: 10;
+    padding: 0px 30px;
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#about-us-in {
+    text-align: center;
+    width: 40%;
+}
+
+#about-us-in h3 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#about-us-in p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.image {    
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#img1 {
+    height: 220px;
+    width: 200px;
+}
+
+#img2 {
+    height: 220px;
+    width: 200px;
+}
+
+#imageset3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+}
+.images{
+    transition: all ease-out 2s;
+    overflow: hidden;
+    position: relative;
+    /* background-color: blue; */
+    width: 400px;
+    border-radius: 20px;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+}
+#i1{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+#i2{
+    
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+#i3{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+
+.images > h3 {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 40px;
+    padding-left: 29px;
+    font-size: 40px;
+    font-weight: 900;
+    z-index: 10;
+}
+
+.overlay > h3 {
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    padding-top: 100px;
+    padding-left: 29px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #000;
+}
+
+.overlay p{
+    font-size: 20px;
+    padding-top: 100px;
+    padding-left: 29px;
+    color: black;
+    position: absolute;
+    top: 112px;
+    z-index: 10;
+}
+.overlay {
+    background-color: #91B508;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay:hover{
+    position: relative;
+    opacity: 1;
+    z-index: 10;
+}
+#i1:hover{
+    transform: rotate3d(1, 1, 1,-10deg);
+    opacity: 1;
+}
+#i2:hover{
+    transform: rotate3d(1, 1, 1,-10deg);
+    /* background: #91B508; */
+    opacity: 1;
+}
+#i3:hover{
+    transform: rotate3d(1, 1, 1,-10deg);
+    opacity: 1;
+    
+}
+.images:hover{
+    cursor: pointer;
+}
+#green{
+    /* background:linear-gradient(to right top , #ABDE22, #31A733); */
+    background: linear-gradient(to left bottom ,#0E9F3A , #AFE323 );
+    position: relative;
+    z-index: 10;
+    height:50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.no:hover{
+    position: relative;
+    /* z-index: 10 ; */
+    opacity: 0;
+}
+#green img{
+    width: 200px;
+    height: 320px;
+    object-fit: cover;
+}
+#green h4{
+    text-align: center;
+    font-size: 29px;
+    line-height: 45px;
+    width: 50%;
+    color:#000;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#section{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 100px;
+    min-height:70vh;
+    width: 100%;
+}
+#section img{
+    border-radius: 20px;
+    height: 450px;
+    width: 50%;
+    object-fit: cover;
+}
+#secbaju{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#secbaju h1{
+    margin-top: 20px;
+    font-size: 55px;
+    font-weight: 900;
+    white-space: nowrap;
+}
+#secbaju p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 40px;
+}
+#secbaju button{
+    font-size: 16px;
+    font-weight: 600;
+    border: 3px solid #91B508;
+    border-radius: 50px;
+    text-align: center;
+    height: 60px;
+    width: 200px;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    color: white;
+    background-color: #000;
+}
+#secbaju button:hover{
+    cursor: pointer;
+    transition: all ease-out 2s; 
+    background-color: #91B508;
+}
+#line2line{
+    display: flex;
+    position: relative;
+    z-index: 10;
+    padding-top: 85px;
+    height: 70vh;
+    width:100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.scrolling{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    animation: scrol linear 20s infinite;
+}
+.scrolling img{
+    border-radius: 20px;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    transform: rotate(-2deg);
+    margin-right: 30px;
+    position: relative;
+    z-index: 10;
+}
+@keyframes scrol {
+    from{
+        transform: translateX(0%);
+        transform: translateZ(0%);
+    }
+    to{
+        transform: translateX(-100%);
+        transform: translateZ(-20% );
+    }
+}
+#line2line::-webkit-scrollbar{
+    display: none;
+}
+#excle{
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    z-index: 10;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#excle img{
+    z-index: 10;
+    position: relative;
+    height: 50px;
+    width: 80px;
+    /* object-fit: cover; */
+}
+#excle #photo1{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+}
+#excle #photo2{
+    position: absolute;
+    bottom: -4%;
+    right: 9%;
+}
+#excle p{
+    line-height: 60px;
+    width: 70%;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+#box3{
+    height: 70vh;
+    width: 100%;
+    margin-top: 200px;
+    position: relative;
+    z-index: 10;
+}
+.capsules{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.capsules > button{
+    position: relative;
+    z-index: 10;
+    height: 150px;
+    width: 370px;
+    border-radius: 20px;
+    color: black;
+    font-size: 35px;
+    background-color: #AFE323;
+    font-weight: 900;
+}
+
+.capsules > button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#first:hover{
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-toptracer-1536x1025.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+#second:hover{
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons-1536x1025.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+}
+#third:hover{
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-ag-1536x1022.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+
+}
+.h3text{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .h3text > h3{
+    position: absolute;
+    top: -8%;
+    font-size: 60px;    
+    z-index: 8;
+} */
+ .h3text > h3{
+    position: absolute;
+    top: 6%;
+    font-size: 60px;    
+    z-index: 8;
+}
